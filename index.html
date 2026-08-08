@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>아이랑 뭐하지</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏡</text></svg>" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">🏡 <span id="siteTitleText">아이랑 뭐하지</span> <span class="logo-star">⭐</span></div>
+      <nav class="header-nav">
+        <a href="#kidsSection" class="nav-pill nav-pill--mint">아이들 소개</a>
+        <a href="#postsSection" class="nav-pill nav-pill--sky">최신 이야기</a>
+        <a href="#categorySection" class="nav-pill nav-pill--pink">카테고리</a>
+        <a href="#wishlistSection" class="nav-pill nav-pill--yellow">가보고 싶은 곳</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <span class="hero-star hero-star--1">★</span>
+    <span class="hero-star hero-star--2">★</span>
+    <span class="hero-star hero-star--3">★</span>
+    <span class="hero-star hero-star--4">★</span>
+    <div class="hero-inner">
+      <span class="hero-badge">✨ 매일 쌓여가는 우리 가족 기록</span>
+      <h1 class="hero-title">오늘은 아이랑<br />뭐 했을까요? 🤔</h1>
+      <p class="hero-subtitle" id="siteSubtitle"></p>
+      <div class="hero-stats" id="heroStats"></div>
+      <div class="kids-profile" id="kidsSection"></div>
+    </div>
+  </section>
+
+  <div class="category-marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+
+  <section class="category-stats" id="categorySection">
+    <h2 class="section-title">카테고리별로 보기 ✨</h2>
+    <div class="category-cards" id="categoryCards"></div>
+  </section>
+
+  <section class="wishlist-section" id="wishlistSection">
+    <h2 class="section-title">아이랑 가보고 싶은 곳 🗺️</h2>
+    <div class="wishlist-groups" id="wishlistGroups"></div>
+  </section>
+
+  <section id="postsSection">
+    <nav class="filter-tabs" id="filterTabs"></nav>
+
+    <main>
+      <div class="posts-grid" id="postsGrid"></div>
+    </main>
+  </section>
+
+  <footer class="site-footer">
+    <span class="footer-star footer-star--1">★</span>
+    <span class="footer-star footer-star--2">★</span>
+    <div class="footer-inner">
+      <div class="footer-logo">🏡 아이랑 뭐하지 ⭐</div>
+      <p class="footer-tagline">선율이, 시율이와 함께한 순간들을 기록하는 우리 가족만의 공간 💛</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="닫기">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="이전 사진">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="다음 사진">›</button>
+    <div class="lightbox-content">
+      <div id="lightboxMediaWrap"></div>
+      <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+  </div>
+
+  <script src="data/kids.js"></script>
+  <script src="data/posts.js"></script>
+  <script src="data/wishlist.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
